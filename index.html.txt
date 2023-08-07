@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>7A</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://raw.githubusercontent.com/harshakurra123/Smile-Maker/main/images/favicon.ico" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+    <div class="card text-center">
+        <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Jokes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">about</a>
+                </li>
+
+            </ul>
+        </div>
+        {% for i in data %}
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5" style="justify-content: center;">
+            <div class="col mb-4">
+                <div class="card">
+                    <!-- <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">{{ i.category_name }}</h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>
+
+</body>
+<!-- Footer -->
+<footer class="page-footer font-small indigo">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">ABOUT US</h5>
+
+
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto">
+
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">USEFUL LINKS</h5>
+
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="https://github.com/harshakurra123/Smile-Maker">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/harshakurra123/Smile-Maker/blob/main/Proposal.md">Proposal</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/harshakurra123/Smile-Maker/projects/1">Work Plan</a>
+                    </li>
+                    <li>
+                        <a href="#!">Proposal Number - 7A</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+</html>
